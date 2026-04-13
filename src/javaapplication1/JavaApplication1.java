@@ -1,21 +1,28 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package javaapplication1;
 
-/**
- *
- * @author elise
- */
+import java.util.Scanner;
+
 public class JavaApplication1 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
+           Scanner sc = new Scanner(System.in);
+
+        System.out.print("Ingrese la nota: ");
+        int nota = sc.nextInt();
+
+        if (nota < 4) {
+            System.out.println("Desaprobo");
+        } else {
+            if (nota == 10) {
+                System.out.println("Aprobo - Sobresaliente");
+            } else {
+                System.out.println("Aprobo");
+            }
+        }
+    }
+}
+   
 
             
-    }
-    
-}
+   
